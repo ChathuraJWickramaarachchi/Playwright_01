@@ -7,8 +7,8 @@ test('Translate text from Singlish to Sinhala', async ({ page }) => {
   await page.fill('#sourceText', 'Hello');
 
   // Select languages
-  await page.selectOption('#sourceLang', 'en');
-  await page.selectOption('#targetLang', 'es');
+  await page.selectOption('#sourceLang', 'singlish');
+  await page.selectOption('#targetLang', 'sinhala');
 
   // Click translate
   await page.click('#translateBtn');
