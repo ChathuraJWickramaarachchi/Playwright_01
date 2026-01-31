@@ -27,17 +27,35 @@ First you should have to intall node.js
   How to Running Test?
   server.js is running on port number 3000.
 
-  Task                                                  Command                 
-Run all tests                                   npx playwright test
-npx playwright test                             npx playwright test --headed
-Run only one test case                          npx playwright test -g "TC 01"
-Run in debug mode (step-by-step)                npx playwright test --debug
-Run and generate HTML report                    npx playwright test 
-show report                                     npx playwright show-report
-Run with trace files (for debugging)            npx playwright test --trace on
+Task Command                
+Run all tests                                  
+    npx playwright test
+
+Run with browser visible                           
+    npx playwright test --headed
+
+Run only one test case                          
+    npx playwright test -g "TC 01"
+
+Run in debug mode (step-by-step)                
+    npx playwright test --debug
+
+Run and generate HTML report                   
+    npx playwright test 
+
+show report                                     
+    npx playwright show-report
+
+Run with trace files (for debugging)            
+    npx playwright test --trace on
 
 How to debug?
-            Task                                                    Command
-    Start server manually first                                  node server.js
-    In another terminal, run one test with browser               npx playwright test --headed -g "TC 01"
-    open the report                                              npx playwright show-report
+
+    Start server manually first                                  
+        node server.js
+    
+    In another terminal, run one test with browser               
+        npx playwright test --headed -g "TC 01"
+    
+    open the report                                                 
+        npx playwright show-report
