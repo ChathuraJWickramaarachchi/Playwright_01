@@ -28,34 +28,34 @@ First you should have to intall node.js
   server.js is running on port number 3000.
 
 Task Command                
-Run all tests                                  
+01) Run all tests:                                 
     npx playwright test
 
-Run with browser visible                           
+02) Run with browser visible:                         
     npx playwright test --headed
 
-Run only one test case                          
+03) Run only one test case:                          
     npx playwright test -g "TC 01"
 
-Run in debug mode (step-by-step)                
+04) Run in debug mode (step-by-step):                
     npx playwright test --debug
 
-Run and generate HTML report                   
+05) Run and generate HTML report:                  
     npx playwright test 
 
-show report                                     
+06) show report:                                     
     npx playwright show-report
 
-Run with trace files (for debugging)            
+07) Run with trace files (for debugging):        
     npx playwright test --trace on
 
 How to debug?
 
-    Start server manually first                                  
+    *Start server manually first                                  
         node server.js
     
-    In another terminal, run one test with browser               
+    *In another terminal, run one test with browser               
         npx playwright test --headed -g "TC 01"
     
-    open the report                                                 
+    *open the report                                                 
         npx playwright show-report
